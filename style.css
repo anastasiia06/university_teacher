@@ -326,3 +326,30 @@ h2 {
         margin: 20px 10px;
     }
 }
+
+#dom-nav-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+#dom-nav-btn:hover:not(:disabled) {
+    background-color: var(--accent-color);
+}
+
+#dom-nav-btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
